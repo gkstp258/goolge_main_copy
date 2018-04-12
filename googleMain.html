@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+	<style type="text/css">
+		img {
+			width: 450px;
+			height: 250px;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.nav_bar {
+			height: 30px;
+			float: right;
+		}
+
+		.nav_text_box {
+			height: 30px;
+			display: inline-block;
+			padding-right: 5px;
+			color: black;
+			position: relative;
+		}
+
+		.nav_icon_box {
+			width: 23px;
+			height: 23px;
+			display: inline-block;
+			margin: 0px 5px -5px 5px;
+			background-image: url("https://docs.google.com/drawings/d/1Yy0vs1igTFZcacNLBC5dBQUfxESKh8mp34sBzoTWLIU/pub?w=22&h=22");
+		}
+
+		.Login_button {
+			border: 1px;
+			display: inline-block;
+			color: #F9FFFF;
+			background-color: #0078FF;
+			padding: 7px 12px 7px 12px;
+		}
+
+		#text_box {
+			width: 570px;
+			height: 22px;
+			border: 1px solid #DDDDDD;
+			margin-top: 5px;
+			padding: 10px;
+			position: relative;
+		}
+
+		.search_button {
+			border: 1px solid #FFFFFF;
+			padding: 10px 18px 10px 18px;
+			display: inline-block;
+			margin-top: 30px;
+			color: #727272;
+			background-color: #efefef;
+		}
+
+		.search_button:hover {
+			color: black;
+		}
+
+		#header {
+			width: 99%;
+			height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<div class="nav_bar">
+			<div class="nav_text_box">
+				<a href="https://mail.google.com/mail/">
+					<p>Gmail</p>
+				</a>
+			</div>
+			<div class="nav_text_box">
+				<a href="https://www.google.co.kr/imghp?hl=ko">
+					<p>이미지</p>
+				</a>
+			</div>
+			<div class="nav_icon_box"></div>
+			<input class="Login_button" type="submit" value="로그인">
+		</div>
+	</div>
+	<form class="gsh" action="/search" id="gsh" method="GET" role="search">
+		<center>
+			<div id="content">
+				<div style="height:230px;margin-top:90px" id="lga">
+					<p>
+						<img src="google.jpg">
+					</p>
+					<div id="body">
+						<input id="text_box" type="text">
+						<div class="search_bar">
+							<input class="search_button" type="submit" value="Google 검색">
+							<input class="search_button" type="submit" value="I'm Feeling Lucky">
+						</div>
+					</div>
+				</div>
+			</div>
+	</form>
+	</center>
+</body>
+
+</html>
